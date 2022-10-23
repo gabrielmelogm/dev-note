@@ -1,12 +1,16 @@
-import { Button, Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
+import { Header } from "./Components/Header"
 
 function App() {
 
   return (
-    <>
-      <Text>Hello World</Text>
-      <Button onClick={() => alert('Hello World')}>Click</Button>
-    </>
+    <Box
+      width="100%"
+      minH="100vh"
+      backgroundColor="background"
+    >
+      <Header />
+    </Box>
   )
 }
 

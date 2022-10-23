@@ -3,7 +3,7 @@ import { Button } from "./components/Button";
 
 export const theme: ThemeConfig = extendTheme({
   semanticToken: {
-    initialColorMode: "light",
+    initialColorMode: "dark",
     useSystemColorMode: false,
     styles: {
       global: {
@@ -17,7 +17,7 @@ export const theme: ThemeConfig = extendTheme({
   colors: {
     white: "#FFF",
     black: "#000",
-    background: "#eef0f8",
+    background: "#161616",
     main: "#8257e5",
     mainDark: "#6833e4",
     secondary: "",
