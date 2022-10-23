@@ -6,3 +6,4 @@ Aplicação simples de bloco de notas feito com meu amigo [Elielson André](http
 - React
 - Typescript
 - Vite
+- Chakra ui
