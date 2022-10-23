@@ -1,7 +1,10 @@
 import { Avatar, Box, Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { usePage } from "../hooks/usePage";
 import { Container } from "./Container";
 
 export function Header() {
+  const { setPage } = usePage()
+
   return (
     <Box
       w="100%"
@@ -24,7 +27,8 @@ export function Header() {
           >
             <Button
               w="100px"
-              size="lg"  
+              size="lg"
+              onClick={() => setPage('create')}
             >
               Nova
             </Button>
@@ -36,8 +40,8 @@ export function Header() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Listar notas</MenuItem>
-                <MenuItem>Nova nota</MenuItem>
+                <MenuItem onClick={() => setPage('list')}>Listar notas</MenuItem>
+                <MenuItem onClick={() => setPage('create')}>Nova nota</MenuItem>
                 <MenuItem>Sair</MenuItem>
               </MenuList>
             </Menu>

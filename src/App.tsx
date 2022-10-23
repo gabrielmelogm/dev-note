@@ -2,9 +2,10 @@ import { Box } from "@chakra-ui/react"
 import { Header } from "./Components/Header"
 import { NewNote } from "./Components/NewNote"
 import { NotesList } from "./Components/NotesList"
+import { usePage } from "./hooks/usePage"
 
 function App() {
-
+  const { page } = usePage()
   return (
     <Box
       width="100%"
@@ -12,8 +13,11 @@ function App() {
       backgroundColor="background"
     >
       <Header />
-      {/* <NotesList /> */}
-      <NewNote />
+      {
+        (page === "list") ?
+        (<NotesList />) :
+        (<NewNote />)
+      }
     </Box>
   )
 }
