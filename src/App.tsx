@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react"
 import { Header } from "./Components/Header"
+import { NotesList } from "./Components/NotesList"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       backgroundColor="background"
     >
       <Header />
+      <NotesList />
     </Box>
   )
 }
